@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    padding: 10px;
+    position: sticky;
+    justify-content: center;
+    background-color: #F4976C;
+    top: 0;
+    border-bottom: 3px solid black;
+    z-index: 30;
+}
+.logo{
+    font-size: larger;
+    padding:20px;
+    color: black;
+    font-weight: bolder;
+}
+.left-side{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #ECECEC;
+    flex-wrap: wrap;
+    
+}
+header nav #write{
+    height: 30px;
+    margin: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+.post{
+    margin: auto;
+    position: relative;
+    width: 330px;
+    height: 330px;
+    background:  #271d1d;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 15px 15px 60px rgba(0,0,0,0.15);
+    padding: 10px;
+    transition: transform .2s;
+}
+.post:hover{
+    transform: scale(1.1);
+}
+.content h1{
+    margin-bottom: 10px;
+}
+#pt, #pn{
+    color: rgb(197, 197, 197);
+}
+#pc{
+    color: rgb(226, 226, 226);
+}
+.post-header{
+    display: flex;  
+    align-items: center;
+}
+.profile{
+    margin-right: 10px;
+}
+.polli{
+    height: 40px;
+    transition: 0.27s;
+    margin: 7px;  
+}
+.polli:hover{
+    transform: scale(1.3);
+    cursor:pointer;
+}
+.content{
+    padding: 25px;
+}
+.content p{
+    height: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Main#blur.active{
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#pop-up
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    top:40%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background:#fff;
+    overflow: scroll;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#pop-up p{
+    margin-bottom: 10px;
+}
+#pop-up.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+#close{
+    padding: 7px;
+    margin: 20px;
+    background: black;
+    text-align: center;
+    color: #fff;
+}
+
+.post{
+    
+    margin: 25px;
+}
+.poll{
+    padding-left: 40px;
+    border-left: 1px solid gray;
+}
+.pfoot{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#upa{
+    height: 27px;
+    margin-left: 225px;
+}
+#op{
+    margin-left: 60px;
+}
+#da{
+    height: 27px;
+    transform: rotate(180deg);
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#upa, #da{
+    margin-top: 20px;
+}
+.cont{
+    margin-right: 20px;
+}
+
+#upa:hover{
+    padding: 3px;
+    opacity: 0.85;
+}
+#da:hover{
+    opacity: 0.85;
+    padding: 3px;
+}
+.pagination {
+    display: inline-block;
+    margin: 10px 0 20px 40%;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: #adaf4c;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+ .header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+ }

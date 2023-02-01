@@ -1,0 +1,205 @@
+<!-- {% load static %} -->
+<html>
+    <head>
+        <title>Community Page</title>
+        <script src="comm.js"></script>
+        <link rel="stylesheet" href="comstyle.css">
+    </head>
+
+    </html>
+    <header>
+        <div class="logo"><p">LOGO HERE PROBABLY</p></div>
+        <!--
+        <div class="search-box">
+            <a href="#"><img src="magnifying-glass.png" alt="Search icon" id="magglass"></a>
+            <input type="search" id="search" placeholder="Search">
+        </div>
+    -->
+        <nav>
+            <a href="compentry.html"><img src="write.png" alt="Write icon" id = "write"></a>
+        </nav>
+    </header>
+    <body>
+        <script type="text/javascript">
+            function toggle(){
+                var blur = document.getElementById('blur');
+                blur.classList.toggle('active')
+                var popup = document.getElementById('pop-up');
+                popup.classList.toggle('active')
+            }
+        </script>
+        <div class="Main" id="blur">
+           <div class="left-side">
+            
+                <!-- {% block body %} -->
+                
+                    <!-- {% for post in posts %}  -->
+                    <div class="post">
+                               
+                        <div class="post-header">
+                            <div class="profile">
+                                <img height=50px src="profile.png" alt="profile" class="cover">
+                            </div>
+                            <h3 id="pn">{{ post.name }}</h3>                         
+                        
+                        <a onclick="toggle()">
+                            <img src="open.png" alt="view" class="polli" id="op">
+                        </a>
+                        </div>
+                    <div class="content">
+                        <h1 id="pt">{{ post.title }}</h1>
+                        <p id="pc">{{ post.content }}</p>
+                    </div>
+                    
+                    <!-- {% endfor %} -->
+                    
+                    
+                    
+                    <!-- {% endblock %} -->
+                    </div>
+                    <div class="post">
+                               
+                        <div class="post-header">
+                            <div class="profile">
+                                <img height=50px src="profile.png" alt="profile" class="cover">
+                            </div>
+                            <h3 id="pn">{{ post.name }}</h3>                         
+                        
+                        <a onclick="toggle()">
+                            <img src="open.png" alt="view" class="polli" id="op">
+                        </a>
+                        </div>
+                    <div class="content">
+                        <h1 id="pt">{{ post.title }}</h1>
+                        <p id="pc">{{ post.content }}</p>
+                    </div>
+                    
+                    <!-- {% endfor %} -->
+                    
+                    
+                    
+                    <!-- {% endblock %} -->
+                    </div>
+                    <div class="post">
+                               
+                        <div class="post-header">
+                            <div class="profile">
+                                <img height=50px src="profile.png" alt="profile" class="cover">
+                            </div>
+                            <h3 id="pn">{{ post.name }}</h3>                         
+                        
+                        <a onclick="toggle()">
+                            <img src="open.png" alt="view" class="polli" id="op">
+                        </a>
+                        </div>
+                    <div class="content">
+                        <h1 id="pt">{{ post.title }}</h1>
+                        <p id="pc">{{ post.content }}</p>
+                    </div>
+                    
+                    <!-- {% endfor %} -->
+                    
+                    
+                    
+                    <!-- {% endblock %} -->
+                    </div>
+                    <div class="post">
+                               
+                        <div class="post-header">
+                            <div class="profile">
+                                <img height=50px src="profile.png" alt="profile" class="cover">
+                            </div>
+                            <h3 id="pn">{{ post.name }}</h3>                         
+                        
+                        <a onclick="toggle()">
+                            <img src="open.png" alt="view" class="polli" id="op">
+                        </a>
+                        </div>
+                    <div class="content">
+                        <h1 id="pt">{{ post.title }}</h1>
+                        <p id="pc">{{ post.content }}</p>
+                    </div>
+                    
+                    <!-- {% endfor %} -->
+                    
+                    
+                    
+                    <!-- {% endblock %} -->
+                    </div>
+                    <div class="post">
+                               
+                        <div class="post-header">
+                            <div class="profile">
+                                <img height=50px src="profile.png" alt="profile" class="cover">
+                            </div>
+                            <h3 id="pn">{{ post.name }}</h3>                         
+                        
+                        <a onclick="toggle()">
+                            <img src="open.png" alt="view" class="polli" id="op">
+                        </a>
+                        </div>
+                    <div class="content">
+                        <h1 id="pt">{{ post.title }}</h1>
+                        <p id="pc">{{ post.content }}</p>
+                    </div>
+                    
+                    <!-- {% endfor %} -->
+                    
+                    
+                    
+                    <!-- {% endblock %} -->
+                    </div>
+                    <div class="post">
+                               
+                        <div class="post-header">
+                            <div class="profile">
+                                <img height=50px src="profile.png" alt="profile" class="cover">
+                            </div>
+                            <h3 id="pn">{{ post.name }}</h3>                         
+                        
+                        <a onclick="toggle()">
+                            <img src="open.png" alt="view" class="polli" id="op">
+                        </a>
+                        </div>
+                    <div class="content">
+                        <h1 id="pt">{{ post.title }}</h1>
+                        <p id="pc">{{ post.content }}</p>
+                    </div>
+                    
+                    <!-- {% endfor %} -->
+                    
+                    
+                    
+                    <!-- {% endblock %} -->
+                    </div>
+    </div>
+    </div>
+    <div id="pop-up">
+        <div class="cont"><p>He stared out the window at the snowy field. He'd been stuck in the house for close to a month and his only view of the outside world was through the window. There wasn't much to see. It was mostly just the field with an occasional bird or small animal who ventured into the field. As he continued to stare out the window, he wondered how much longer he'd be shackled to the steel bar inside the house.
+            The kids were loud. They were way too ng this moment for a good six months, and it had finally arrived despite her best efforts to forestall it. No matter how hard she tried, she couldn't keep the inevitable from happening. So the time had come for a normal person to say goodbye and move on. It was at this moment that Nancy decided not to be a normal person. After all the time and effort she had expended, she couldn't bring herself to do it.</p>
+        <div class="pfoot">
+            <a href="#" onclick="toggle()" id="close">CLOSE</a>
+         
+            <a href="#"><img src="arrow-up.png" id="upa"></a>
+            <a href="#"><img src="arrow-up.png" id="da"></a>
+            </div>
+        </div>
+        <div class="poll">
+            <p>POLL HERE</p>
+
+        </div>
+    </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+        
+    </body>
+   
+</html>
